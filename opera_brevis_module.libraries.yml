@@ -1,0 +1,30 @@
+opera_brevis_module:
+  version: 1.x
+  css:
+    theme:
+      css/opera-brevis-module.css: {}
+
+opera_brevis_module.footer_unterstuetzen:
+  version: 1.x
+  css:
+    theme:
+      css/block/footer-unterstuetzen.css: {}
+
+opera_brevis_module.footer_logo:
+  version: 1.x
+  css:
+    theme:
+      css/block/footer-logo.css: {}
+
+opera_brevis_module.footer_login:
+  version: 1.x
+  css:
+    theme:
+      css/block/footer-login.css: {}
+
+#
+opera_brevis_module.twig:
+  version: 1.x
+  css:
+    theme:
+      css/block/twig.css: {}

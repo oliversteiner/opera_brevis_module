@@ -31,5 +31,25 @@ function opera_brevis_module_theme() {
     'opera_brevis_module' => [
       'render element' => 'children',
     ],
+    'footer_logo' => [
+      'variables' => [
+        'content' => NULL
+      ],
+      'render element' => 'children',
+    ],
+    'footer_login' => [
+      'variables' => [
+        'content' => NULL
+      ],
+      'render element' => 'children',
+    ],
+
+    'footer_unterstuetzen' => [
+      'variables' => [
+        'content' => NULL
+      ],
+      'render element' => 'children',
+    ],
+
   ];
 }

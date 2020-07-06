@@ -1,0 +1,20 @@
+.content .opera-brevis-unterstuetzen-block {
+  border-left: 3px solid silver;
+  padding-left: 9px;
+}
+.content .opera-brevis-unterstuetzen-block p {
+  font-family: Lora-Regular, Roboto-Regular, Roboto, serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+.content .opera-brevis-unterstuetzen-block a, .content .opera-brevis-unterstuetzen-block a:link {
+  font-family: Lora-MediumItalic, serif;
+  font-size: 16px;
+  color: #A77B1A;
+}
+
+#block-footerunterstutzenblock {
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=footer-unterstuetzen.css.map */
