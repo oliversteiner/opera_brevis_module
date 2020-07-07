@@ -6,11 +6,16 @@
   font-family: Lora-Regular, serif;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
 }
-.content .opera-brevis-unterstuetzen-block a, .content .opera-brevis-unterstuetzen-block a:link {
-  font-family: Lora-MediumItalic, serif;
+.content .opera-brevis-unterstuetzen-block a,
+.content .opera-brevis-unterstuetzen-block a:link {
+  font-family: Lora-BoldItalic, serif;
   font-size: 16px;
-  color: #A77B1A;
+  color: #a77b1a;
+  font-weight: 700;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=footer-unterstuetzen.css.map */

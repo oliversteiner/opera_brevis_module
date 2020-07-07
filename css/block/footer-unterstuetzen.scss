@@ -2,15 +2,20 @@
   border-left: 3px solid silver;
   padding-left: 9px;
 
-  p{
+  p {
     font-family: Lora-Regular, serif;
     font-size: 16px;
     line-height: 20px;
+    font-weight: 400;
+    font-style: normal;
   }
- a, a:link{
-    font-family: Lora-MediumItalic,serif;
+  a,
+  a:link {
+    font-family: Lora-BoldItalic, serif;
     font-size: 16px;
-    color: #A77B1A;
+    color: #a77b1a;
+    font-weight: 700;
+    font-style: italic;
   }
 }
 
