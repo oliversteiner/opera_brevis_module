@@ -1,7 +1,12 @@
+@import '../../../../../themes/custom/opera_brevis_2020/scss/partials/design/schriften';
+@import '../../../../../themes/custom/opera_brevis_2020/scss/partials/design/farben.scss';
 .opera-brevis-footer-login-block {
-   .icon{
+  color: $color-text-on-dark;
+
+  .icon{
     margin-right: 5px;
   }
 }
 #block-footerloginblock {
+  color: $color-text-on-dark;
 }

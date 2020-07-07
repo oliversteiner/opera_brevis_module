@@ -1,5 +1,27 @@
+/* Schriften
+
+LORA
+  Regular 400
+  Regular 400 italic
+  Bold 700
+  Bold 700 italic
+
+ROBOTO
+  Regular 400
+  Regular 400 italic
+  Bold 700
+  Bold 700 italic
+
+*/
+.opera-brevis-footer-login-block {
+  color: #d2d2d2;
+}
 .opera-brevis-footer-login-block .icon {
   margin-right: 5px;
+}
+
+#block-footerloginblock {
+  color: #d2d2d2;
 }
 
 /*# sourceMappingURL=footer-login.css.map */

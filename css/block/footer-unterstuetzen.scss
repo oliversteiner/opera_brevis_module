@@ -1,21 +1,18 @@
+@import '../../../../../themes/custom/opera_brevis_2020/scss/partials/design/schriften';
+@import '../../../../../themes/custom/opera_brevis_2020/scss/partials/design/farben.scss';
+
 .content .opera-brevis-unterstuetzen-block {
   border-left: 3px solid silver;
   padding-left: 9px;
 
   p {
-    font-family: Lora-Regular, serif;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-    font-style: normal;
+    @include font-serif-italic;
+    color: $color-text-on-dark;
   }
   a,
   a:link {
-    font-family: Lora-BoldItalic, serif;
-    font-size: 16px;
-    color: #a77b1a;
-    font-weight: 700;
-    font-style: italic;
+    @include font-serif-bold-italic;
+    color: $color-link;
   }
 }
 
