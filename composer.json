@@ -1,5 +1,5 @@
 {
-    "name": "opera_brevis_module",
+    "name": "drupal/opera_brevis_module",
     "type": "drupal-module",
     "description": "Custom Module for Opera Brevis",
     "keywords": [
@@ -8,6 +8,6 @@
     "minimum-stability": "dev",
     "support": {
         "issues": "https://www.drupal.org/project/issues/opera_brevis_module",
-        "source": "http://cgit.drupalcode.org/opera_brevis_module",
-    },
+        "source": "http://cgit.drupalcode.org/opera_brevis_module"
+    }
 }
