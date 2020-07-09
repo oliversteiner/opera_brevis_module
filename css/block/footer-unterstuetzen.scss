@@ -1,18 +1,27 @@
 @import '../../../../../themes/custom/opera_brevis_2020/scss/partials/design/schriften';
 @import '../../../../../themes/custom/opera_brevis_2020/scss/partials/design/farben.scss';
 
-.content .opera-brevis-unterstuetzen-block {
+.opera-brevis-unterstuetzen-block {
   border-left: 3px solid silver;
-  padding-left: 9px;
+  padding-left: 12px;
 
-  p {
-    @include font-serif-italic;
-    color: $color-text-on-dark;
+  &:hover{
+    border-color: $brevis-accent;
   }
-  a,
-  a:link {
+
+ .opera-brevis-unterstuetzen-text {
+    @include font-serif-italic;
+   color: $color-text-on-dark;
+   margin-bottom: 10px;
+
+ }
+  .opera-brevis-unterstuetzen-club {
     @include font-serif-bold-italic;
     color: $color-link;
+  }
+  i, svg{
+    color: $color-text-on-dark;
+
   }
 }
 
