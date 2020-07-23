@@ -1,16 +1,42 @@
-.content .opera-brevis-unterstuetzen-block {
+/* Schriften
+
+LORA
+  Regular 400
+  Regular 400 italic
+  Bold 700
+  Bold 700 italic
+
+ROBOTO
+  Regular 400
+  Regular 400 italic
+  Bold 700
+  Bold 700 italic
+
+*/
+.opera-brevis-unterstuetzen-block {
   border-left: 3px solid silver;
-  padding-left: 9px;
+  padding-left: 12px;
 }
-.content .opera-brevis-unterstuetzen-block p {
-  font-family: Lora-Regular, Roboto-Regular, Roboto, serif;
-  font-size: 16px;
-  line-height: 20px;
+.opera-brevis-unterstuetzen-block:hover {
+  border-color: #a77b1a;
 }
-.content .opera-brevis-unterstuetzen-block a, .content .opera-brevis-unterstuetzen-block a:link {
-  font-family: Lora-MediumItalic, serif;
-  font-size: 16px;
-  color: #A77B1A;
+.opera-brevis-unterstuetzen-block .opera-brevis-unterstuetzen-text {
+  font-family: Lora, "Lora-Regular", Times, "Times New Roman", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #363636;
+  color: #d2d2d2;
+  margin-bottom: 10px;
+}
+.opera-brevis-unterstuetzen-block .opera-brevis-unterstuetzen-club {
+  font-family: Lora, "Lora-Regular", Times, "Times New Roman", Georgia, serif;
+  font-style: italic;
+  font-weight: 700;
+  color: #363636;
+  color: #a77b1a;
+}
+.opera-brevis-unterstuetzen-block i, .opera-brevis-unterstuetzen-block svg {
+  color: #d2d2d2;
 }
 
 /*# sourceMappingURL=footer-unterstuetzen.css.map */
