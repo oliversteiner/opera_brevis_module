@@ -1,0 +1,23 @@
+#
+# Universal Gallery > List Projects
+#
+opera_brevis_module.unig.list:
+  path: '/fotos'
+  defaults:
+    _controller: '\Drupal\unig\Controller\ProjectController::projectListTemplate'
+    _title: 'Gallery'
+  requirements:
+    _permission: 'access content'
+
+#
+# Universal Gallery > Show Project
+#
+opera_brevis_module.unig.project.public:
+  path: '/fotos/projekt/{project_id}/{album_id}'
+  defaults:
+    _controller: '\Drupal\unig\Controller\LightgalleryController::getTemplate'
+    _title_callback: '\Drupal\unig\Controller\ProjectController::getTitle'
+    project_id: null
+    album_id: null
+  requirements:
+    _permission: 'access content'

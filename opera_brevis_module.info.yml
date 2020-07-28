@@ -1,5 +1,5 @@
 name: 'Opera Brevis Module'
 type: module
 description: 'Custom Module for Opera Brevis'
-core: 8.x
+core_version_requirement: ^8 || ^9
 package: 'Opera Brevis'
