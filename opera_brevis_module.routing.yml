@@ -5,7 +5,7 @@ opera_brevis_module.unig.list:
   path: '/fotos'
   defaults:
     _controller: '\Drupal\unig\Controller\ProjectController::projectListTemplate'
-    _title: 'Gallery'
+    _title: 'Fotos'
   requirements:
     _permission: 'access content'
 
