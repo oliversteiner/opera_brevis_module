@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
 
 /**
  * Implements hook_help().
@@ -52,4 +53,47 @@ function opera_brevis_module_theme() {
     ],
 
   ];
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function opera_brevis_module_page_attachments(array &$attachments) {
+  $roles = \Drupal::currentUser()->getRoles();
+
+  if (in_array('mollo_editor', $roles, TRUE)) {
+    $attachments['#attached']['library'][] = 'opera_brevis_module/opera_brevis_module.main';
+  }
+}
+
+
+/**
+ * Implements hook_toolbar().
+ */
+function opera_brevis_module_toolbar() {
+  $items['mollo_dashboard'] = [
+    '#cache' => [
+      'contexts' => ['user.roles'],
+    ],
+  ];
+
+  $roles = \Drupal::currentUser()->getRoles();
+
+  if (in_array('mollo_editor', $roles, TRUE)) {
+    $items['mollo_dashboard'] += [
+      '#weight' => 888,
+      '#type' => 'toolbar_item',
+      'tab' => [
+        '#type' => 'link',
+        '#title' => t('Dashboard'),
+        '#url' => Url::fromUri('internal:/admin/dashboard'),
+        '#attributes' => [
+          'title' => t('Eine übersicht der Einträge'),
+          'class' => ['toolbar-icon', 'toolbar-icon-dashboard'],
+        ],
+      ],
+    ];
+  }
+
+  return $items;
 }

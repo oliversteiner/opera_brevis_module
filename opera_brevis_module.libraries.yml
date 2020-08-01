@@ -1,7 +1,7 @@
-opera_brevis_module:
+opera_brevis_module.main:
   version: 1.x
   css:
-    theme:
+    component:
       css/opera-brevis-module.css: {}
 
 opera_brevis_module.footer_unterstuetzen:
