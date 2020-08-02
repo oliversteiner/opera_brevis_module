@@ -34,20 +34,20 @@ function opera_brevis_module_theme() {
     ],
     'footer_logo' => [
       'variables' => [
-        'content' => NULL
+        'content' => NULL,
       ],
       'render element' => 'children',
     ],
     'footer_login' => [
       'variables' => [
-        'content' => NULL
+        'content' => NULL,
       ],
       'render element' => 'children',
     ],
 
     'footer_unterstuetzen' => [
       'variables' => [
-        'content' => NULL
+        'content' => NULL,
       ],
       'render element' => 'children',
     ],
@@ -69,6 +69,9 @@ function opera_brevis_module_page_attachments(array &$attachments) {
 
 /**
  * Implements hook_toolbar().
+ *
+ * Hack: link to dashboard via opera-brevis-module.js in opera brevis theme
+ *
  */
 function opera_brevis_module_toolbar() {
   $items['mollo_dashboard'] = [
@@ -89,10 +92,25 @@ function opera_brevis_module_toolbar() {
         '#url' => Url::fromUri('internal:/admin/dashboard'),
         '#attributes' => [
           'title' => t('Eine übersicht der Einträge'),
-          'class' => ['toolbar-icon', 'toolbar-icon-dashboard'],
+          'class' => [
+            'toolbar-icon',
+            'toolbar-icon-dashboard',
+          ],
+
+        ],
+      ],
+      'tray' => [
+        '#heading' => t('User messages'),
+        'messages' => [],
+      ],
+      // Custom CSS, JS or a library can be associated with the toolbar item.
+      '#attached' => [
+        'library' => [
+          'opera_brevis_module/opera_brevis_module.admin',
         ],
       ],
     ];
+
   }
 
   return $items;
